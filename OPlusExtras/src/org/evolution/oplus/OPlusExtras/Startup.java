@@ -20,6 +20,7 @@ import org.evolution.oplus.OPlusExtras.modeswitch.*;
 import org.evolution.oplus.OPlusExtras.preferences.*;
 import org.evolution.oplus.OPlusExtras.refreshrate.RefreshUtils;
 import org.evolution.oplus.OPlusExtras.services.FPSInfoService;
+import org.evolution.oplus.OPlusExtras.touch.TouchscreenGestureSettings;
 
 public class Startup extends BroadcastReceiver {
 
@@ -39,6 +40,7 @@ public class Startup extends BroadcastReceiver {
         RedPreference.restore(context);
         RefreshUtils.startService(context);
         SaturationPreference.restore(context);
+        TouchscreenGestureSettings.MainSettingsFragment.restoreTouchscreenGestureStates(context);
         ValuePreference.restore(context);
         VibratorStrengthPreference.restore(context);
 

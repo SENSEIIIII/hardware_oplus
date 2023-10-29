@@ -47,6 +47,7 @@ import org.evolution.oplus.OPlusExtras.preferences.*;
 import org.evolution.oplus.OPlusExtras.R;
 import org.evolution.oplus.OPlusExtras.services.*;
 import org.evolution.oplus.OPlusExtras.slider.SliderConstants;
+import org.evolution.oplus.OPlusExtras.touch.TouchscreenGestureSettings;
 
 public class OPlusExtras extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
