@@ -1,3 +1,6 @@
+# AOD brightness
+type vendor_sysfs_aod_brightness, fs_type, sysfs_type;
+
 # Battery Health
 r_dir_file(system_app, vendor_sysfs_usb_supply)
 
@@ -20,3 +23,20 @@ rw_dir_file(system_app, sysfs_vibrator)
 r_dir_file(system_app, sysfs_zram)
 
 allow system_app sysfs_leds:dir search;
+
+# OTG
+type vendor_sysfs_otg_switch, fs_type, sysfs_type;
+
+allow system_app vendor_sysfs_graphics:dir search;
+allow system_app vendor_sysfs_graphics:file rw_file_perms;
+allow system_app vendor_sysfs_usb_supply:dir search;
+allow system_app vendor_sysfs_usb_supply:file rw_file_perms;
+allow system_app vendor_sysfs_otg_switch:dir search;
+allow system_app vendor_sysfs_otg_switch:file rw_file_perms;
+allow system_app vendor_sysfs_battery_supply:dir search;
+allow system_app vendor_sysfs_battery_supply:file rw_file_perms;
+allow system_app vendor_sysfs_fastcharge:dir search;
+allow system_app vendor_sysfs_fastcharge:file rw_file_perms;
+
+allow system_app vendor_sysfs_aod_brightness:dir search;
+allow system_app vendor_sysfs_aod_brightness:file rw_file_perms;
