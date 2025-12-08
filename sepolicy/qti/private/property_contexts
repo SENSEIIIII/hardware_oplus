@@ -13,7 +13,6 @@ persist.sys.bt.a2dp.pendingtime    u:object_r:exported_system_prop:s0
 # Camera
 cam.algo.                        u:object_r:exported_system_prop:s0
 com.oplus.camera.                u:object_r:exported_system_prop:s0
-persist.camera.                  u:object_r:exported_system_prop:s0
 ro.camera.res.                   u:object_r:exported_system_prop:s0
 ro.camera.req.                   u:object_r:exported_system_prop:s0
 ro.hardware.chipname             u:object_r:exported_system_prop:s0
